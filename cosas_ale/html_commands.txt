@@ -1,0 +1,5 @@
+HTML SINTAXIS:
+! TAB
+
+body es todo lo que ve el usuario
+head no es visible por el usuario
