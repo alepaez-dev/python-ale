@@ -40,7 +40,7 @@ main{
     /* font-style: bold; */  
 }
 
-#aside1{
+.asides{
     display: block;
     background-color: orange;
     color: black;
@@ -52,21 +52,13 @@ main{
     width: 85px;
     margin: 5px 5px 5px 5px;
     padding-left: 5px;
+}
+
+#aside1{
     float: left;
 }
 
 #aside2{
-    display: block;
-    background-color: orange;
-    color: black;
-    border-style: solid;
-    border-color: red;
-    border-width: 2px;
-    border-radius: 5px;
-    height: 303px;
-    width: 85px;
-    margin: 5px 5px 5px 5px;
-    padding-left: 5px;
     float: right;
 }
 
