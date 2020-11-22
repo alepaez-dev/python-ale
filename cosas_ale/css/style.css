@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: blue;
+    color: black;
+    border: 4px solid red;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+/* ales website */
+.div1{
+    background-color: black;
+    color:white;
+    margin: auto 5px;
+}
+
+/* barra naranja */
+.div2{
+    background-color: orange;
+    margin: auto 5px;
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.iconos-barra {
+    background-color: white;
+    border: 1px solid black;
+    margin: 2px auto;
+}
+
+.articulos {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+article {
+    border: green 2px solid;
+}
+
+.imagenes {
+    background-color: orange;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 250px;
+
+}
+
+.imagen {
+    background-color: white;
+    border: black 3px solid;
+    height: 60px;
+    width: 160px;
+}
+
+footer {
+    background-color: blue;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barras-footer {
+    margin: auto 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra-roja-footer {
+    background-color: rgba(150, 72, 72, 0.747);
+    width: 40%;
+    height: 60%;
+}
+
+.barra-verde-footer {
+    background-color: rgb(77, 133, 77);
+    height: 60%;
+    width: 15%;
+}
