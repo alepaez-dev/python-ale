@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: blue;
+    border-color: red;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: orange;
+    border-color: greenyellow;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.orange {
+    background-color: orange;
+}
+
+
+.justify-content-spacearound {
+    background-color: orange;
+    justify-content: space-around;
+}
+.align-content-spacearound{
+    align-content: space-around;
+}
+
+.center{
+    justify-content: center;
+    align-content: center;
+}
+
+
+footer{
+    background-color: purple;
+    color: white;
+}

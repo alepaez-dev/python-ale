@@ -1,0 +1,37 @@
+FLEXBOX
+-Flex-container(article, section, header)(PADRE)
+    Contenedor flexibles
+-Flex-items(HIJOS)
+    Como queremos que se comporten dentro del flex container
+    Hijos directos del contenedor flexible
+
+display:flex //pasa a ser un contener flexible
+
+Se crean ejes
+    flex-direction: row(por defecto)
+        EJE PRINCIPAL(horizontal)
+        EJE SECUNDARIO(vertical)
+
+        -justify-content: 
+            manipular comportamientos en el eje
+            principal
+           .flex-start(valor por defecto)
+            .flex-end
+            .space-between
+            .space-around
+            .space-evenly
+            .center
+        -align-items:
+            manipular elementos en el eje secundario
+            .flex-start(valor por defecto)
+            .flex-end
+            .center
+            .baseline
+            .stretch 
+
+
+    flex-direction: column
+        EJE PRINCIPAL(vertical)
+        EJE HORIZONTAL(horizontal)
+    flex-direction: row-reverse
+    flex-direction: column-reverse
