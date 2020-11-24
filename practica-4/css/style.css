@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    
+}
+/* primero */
+.container-2-squares div:first-child {
+    border: 2px solid red;
+}
+
+/* segundo */
+.container-2-squares div:last-child {
+    border: 2px solid yellow;
+}
+
+
+/* ultimo */
+.container:last-child {
+    border: 2px solid green;
+}
+
+@media only screen and (min-width:768px){
+    
+    .container-2-squares{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-2-squares div:first-child{
+        border-color: purple;
+    }
+
+    .container-2-squares div:last-child{
+        width: 150px;
+        border-color: cyan;
+    }
+
+    .container:last-child{
+        border-color: blue;   
+    }
+
+}
+
+@media only screen and (min-width:1024px){
+    .container-all-squares{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-2-squares div:last-child{
+        width: 100px;
+    }
+
+    .container-2-squares div:first-child{
+        border-color: blue;
+    }
+
+    .container:last-child{
+        border-color: green;   
+    }
+
+    .container{
+        border-radius: 50px;
+    }
+}
+
