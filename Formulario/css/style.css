@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 2 SECCIONES */
+
+.seccion-principal .mini-secciones {
+    width: 100%;
+    height: 50vh;
+    
+}
+
+.mini-secciones:first-child {
+    background: rgba(16, 173, 152, 0.5);
+   
+}
+
+.mini-secciones:last-child {
+    background:rgba(82, 98, 192, 0.5);
+    position: relative;
+}
+
+
+
+
+/* FORMULARIO */
+.wrapper {
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    height: 25vh;
+    top: -32vh;
+    /* top: -30%; */
+}
+
+.formulario {
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0,0,10px, rgba(0,0,0,0.2);
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+
+/* mitad mitad + el margen */
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #e6c719;
+    padding: 10px;
+    color: white; /* cambias el color de como escribes en el input y msg*/
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+    
+}
+
+.btn {
+    background: #e6c719;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; /* Para que este todo en mayusculas*/
+}
+
+/* sirve para cambiar el color de letra de fondo un textarea o input */
+/* no funciona en todos los navegadores. moz: mozilla, ms: internet explorer*/
+/* GOOGLE CHROME */
+::-webkit-input-placeholder {
+    color: #e6c719;
+}
+
+/* MEDIA QUERYS */
+@media screen and (max-width:600px) {
+    /* que se haga columna */
+    .formulario {
+        flex-direction: column;
+    }
+    
+    .wrapper {
+        top: -40vh;
+    }
+
+    .msg textarea {
+        height: 80px;
+    }
+
+    /* como ya es columna ya cada hijo puede tener el 100% del width sin problemas */
+    .input-fields, .msg {
+        width: 100%;
+    }
+}
