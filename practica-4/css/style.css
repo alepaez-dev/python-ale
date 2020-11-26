@@ -1,76 +1,72 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
-.container {
+.square {
+    background: grey;
+    border: 1px solid black;
     width: 100px;
     height: 100px;
-    background-color: grey;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    
-}
-/* primero */
-.container-2-squares div:first-child {
-    border: 2px solid red;
+    margin:5px 5px 5px 0px;
 }
 
-/* segundo */
-.container-2-squares div:last-child {
-    border: 2px solid yellow;
+.square:first-child {
+    background: red;
 }
 
-
-/* ultimo */
-.container:last-child {
-    border: 2px solid green;
+.square:nth-child(2) {
+    background: yellow;
+}
+.square:last-child {
+    background: green;
 }
 
-@media only screen and (min-width:768px){
-    
-    .container-2-squares{
+.container-all-squares {
+    width: 30%;
+}
+
+@media only screen and (min-width:768px) {
+    .container-all-squares {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: flex-start;
     }
 
-    .container-2-squares div:first-child{
-        border-color: purple;
+    .square:first-child {
+        background: purple;
     }
-
-    .container-2-squares div:last-child{
-        width: 150px;
-        border-color: cyan;
+    
+    .square:nth-child(2) {
+        background: cyan;
     }
-
-    .container:last-child{
-        border-color: blue;   
+    .square:last-child {
+        background: blue;
     }
-
+    
+  
 }
 
-@media only screen and (min-width:1024px){
-    .container-all-squares{
+@media only screen and (min-width:1024px) {
+    .container-all-squares {
         display: flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
     }
-
-    .container-2-squares div:last-child{
-        width: 100px;
-    }
-
-    .container-2-squares div:first-child{
-        border-color: blue;
-    }
-
-    .container:last-child{
-        border-color: green;   
-    }
-
-    .container{
+    
+    .square {
         border-radius: 50px;
+        margin-left: 5px;
     }
-}
 
+    .square:first-child {
+        background: blue;
+    }
+    
+    .square:last-child {
+        background: green;
+    }
+    
+ 
+}
