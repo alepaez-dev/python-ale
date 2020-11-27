@@ -1,0 +1,136 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: bold;
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 20vh;
+}
+
+main {
+  height: 20vh;
+}
+
+section {
+  height: 20vh;
+  background: cornflowerblue;
+}
+
+.footer {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  background: #0b1523;
+  padding: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .div-footer {
+  height: 20%;
+}
+
+.footer .div-footer div .fas {
+  font-size: 30px;
+}
+
+.footer .div-footer .icon-parrafo {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .div-footer .icon-parrafo p {
+  margin-left: 15px;
+}
+
+.footer .direccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .direccion .fas {
+  font-size: 30px;
+}
+
+.footer .direccion .direccion-info {
+  line-height: 1cm;
+}
+
+.footer .about-us {
+  margin-top: 50px;
+}
+
+.footer .about-us ul {
+  line-height: 1cm;
+}
+
+.footer .contact-us {
+  margin-top: 50px;
+}
+
+.footer .contact-us ul {
+  line-height: 1cm;
+}
+
+.footer .margen-left {
+  margin-left: 15px;
+}
+
+.footer .margin-top {
+  margin-top: 20px;
+}
+
+.footer .redes {
+  margin-top: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer .redes .fab {
+  font-size: 40px;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */

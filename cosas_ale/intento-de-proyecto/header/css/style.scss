@@ -1,0 +1,139 @@
+
+@mixin flex($direction, $justify, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    background: hsl(217, 28%, 15%);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    // min-height: 100vh;
+}
+
+.main {
+    background-color: hsl(218, 28%, 13%);
+    z-index: 1;
+    p {
+        z-index: 1000;
+    }
+    padding: 30px;
+}
+
+.header {
+    background: hsl(217, 28%, 15%);
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px, 10px, 0, 10px;
+    height: 100%;
+    // background-image: url('file:///C:/Users/al3_h/Downloads/Prueba/python/cosas_ale/intento-de-proyecto/header/images/bg-curvy-mobile.svg');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: 0px, center;
+
+    .montana {
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        width: 100%;
+        max-height: 130px;
+        right: 0;
+        z-index: 0;
+    }
+
+    .seccion-nav {
+
+        .logo-principal {
+            width: 50px;
+        }
+        padding: 10px;
+        @include flex(row, space-between, center);
+        .nav {
+            font-size: 70%;
+            align-self: center;
+
+            a {
+                padding: 5px;
+                color: white;
+            }
+        }
+    }
+
+    .seccion-imagen {
+        
+        @include flex(column, flex-start , center);
+        
+        .imagen-intro {
+            align-self: center;
+        }
+        .texto-intro {
+            z-index: 1;
+            padding: 10px;
+            align-self: center;
+            text-align: center;
+            color: white;
+            line-height: 1cm;
+
+            p {
+                margin-top: 10px;
+                line-height: 0.6cm;
+                font-weight: normal;
+            }
+        }
+
+        .btn-get-started {
+            background: hsl(198, 60%, 50%);
+            color: white;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            z-index: 1;
+            border: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        .seccion-nav {
+            padding: 20px;
+            .nav {
+                font-size: 100%;
+            }
+        }
+        .seccion-imagen {
+            .imagen-intro {
+                .slider {
+                    width : 200px;
+                }
+            }
+            .texto-intro {
+                width: 50%;
+                h1 {
+                    max-width: 300px;
+                    margin: auto;
+                }
+            }
+            .btn-get-started {
+                padding: 5px;
+                height: 30px;
+                width: 170px;
+            }
+        }
+
+    }
+}
+

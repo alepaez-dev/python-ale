@@ -1,0 +1,109 @@
+
+@mixin flex($direction, $justify, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: bold;
+    list-style: none;
+    
+}
+
+body {
+    //background: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 20vh;
+    //background: red;
+}
+
+main {
+    height: 20vh;
+    //background: green;
+}
+
+section {
+    height: 20vh;
+    background: cornflowerblue;
+}
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    //height: 40vh;
+    width: 100%;
+    background: hsl(216, 53%, 9%);
+    padding: 20px;
+    color: white;
+    @include flex(column, space-between, flex-start);
+
+    .div-footer {
+        
+        div .fas {
+            font-size: 30px;
+        }
+
+        height: 20%;
+
+        .icon-parrafo {
+            margin-top: 40px;
+            @include flex(row, space-between , flex-start);
+            p {
+                
+                margin-left: 15px;
+            }
+        }
+    }
+    
+    .direccion {
+
+        .fas {
+            font-size: 30px;
+        }
+        @include flex(row,space-between , flex-start);
+        .direccion-info {
+            line-height: 1cm;
+        }
+    }
+
+    .about-us {
+        margin-top: 50px;
+        ul {
+            line-height: 1cm;
+        }
+    }
+
+    .contact-us {
+        margin-top: 50px;
+        ul {
+            line-height: 1cm;
+        }
+    }
+
+    .margen-left {
+        margin-left: 15px;
+    }
+
+    .margin-top{
+        margin-top: 20px;
+    }
+
+    .redes {
+        margin-top: 100px;
+        align-self: center;
+        .fab {
+           font-size: 40px;
+           margin-left: 15px;
+        }
+    }
+
+    
+ 
+}
