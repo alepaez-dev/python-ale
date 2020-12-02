@@ -5,41 +5,55 @@
     font-weight: bold;
 }
 
-.header {
-    background-color: blue;
-    border: 2px solid red;
-
-    .nav {
-        background-color: orange;
-        border: 3px green solid;
-    }
-}
-
-.row {
-    aside {
-        background-color: green;
-        border: 3px solid red;
-        height:400px;
+body {
+    .header {
+        background-color: blue;
+        border: 3px red solid;
+        .nav {
+            background-color: orange;
+            border: 3px green solid;
+        }
     }
 
-    .main {
-        color:white;
-        background-color: pink;
-        border: 3px solid blue;
-        height: 400px;
+    .main{
+        height: 500px;
+
+        .div-aside1{
+            .aside-1 {
+                background-color: orange;
+                border: 1px solid red;
+                height: 100%;
+            }
+        }
+
+        .div-aside2{
+            .aside-2 {
+                background-color: orange;
+                border: 1px solid red;
+                height: 100%;
+            }
+        }
+
         
-    }
+        .div-main{
+            background-color: pink;
+            border: 2px solid blue;
+            //height: 47%;
 
-    .article {
-        color: black;
-        background-color: yellow;
-        height: 25%;
-    }
+            .article{
+                height: 25%;
+                background-color: yellow;
+            }
+        }
 
+        .aside-2{
+
+        }
+    }
+    
     .footer {
-        color: white;
-        background-color: purple;
-        border: 3px black solid;
-        height: 20vh;
+        background-color: violet;
+        border: 2px solid black;
+        height: 100px;
     }
 }
