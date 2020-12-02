@@ -16,10 +16,10 @@
   border: 3px green solid;
 }
 
-.row .aside-1 {
+.row aside {
   background-color: green;
   border: 3px solid red;
-  height: 300px;
+  height: 400px;
 }
 
 .row .main {
